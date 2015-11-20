@@ -1,0 +1,5 @@
+1.0.1: First version of membership
+1.0.2:
+    - Created profiles table
+    - create_profiles_table.php
+1.0.3: Created Members controller

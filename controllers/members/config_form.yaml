@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Member
+
+# Model Form Field configuration
+form: ~/modules/backend/models/user/fields.yaml
+
+# Model Class name
+modelClass: Backend\Models\User
+
+# Default redirect location
+defaultRedirect: xnok/membership/members
+
+# Create page
+create:
+    title: Create Member
+    redirect: xnok/membership/members/update/:id
+    redirectClose: xnok/membership/members
+
+# Update page
+update:
+    title: Edit Member
+    redirect:  xnok/membership/members
+    redirectClose:  xnok/membership/members
+
+# Preview page
+preview:
+    title: Preview Member

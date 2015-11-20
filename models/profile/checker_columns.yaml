@@ -1,0 +1,84 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+columns:
+
+    full_name:
+        label: backend::lang.user.full_name
+        select: concat(first_name, ' ', last_name)
+        searchable: true
+
+    is_activated:
+        label: test
+        type: switch
+
+    membershipDoc:
+        label: Membership Document
+        relation: profile
+        select: membershipDoc
+        type: switch
+        sortable: true
+
+    studentCard:
+        label: Student Card
+        relation: profile
+        select: studentCard
+        type: switch
+        sortable: true
+
+    cqCard:
+        label: CQ Card
+        relation: profile
+        select: cqCard
+        type: switch
+        sortable: true
+
+    rib:
+        label: RIB
+        relation: profile
+        select: rib
+        type: switch
+        sortable: true
+
+    paycheck:
+        label: Paycheck
+        relation: profile
+        select: paycheck
+        type: switch
+        sortable: true
+
+    resume:
+        label: Resume
+        relation: profile
+        select: resume
+        type: switch
+        sortable: true
+
+    ri:
+        label: 'Internal regulation'
+        relation: profile
+        select: ri
+        type: switch
+        sortable: true
+
+    email:
+        label: backend::lang.user.email
+        searchable: false
+        invisible: true
+
+    first_name:
+        label: backend::lang.user.first_name
+        searchable: true
+        invisible: true
+
+    last_name:
+        label: backend::lang.user.last_name
+        searchable: true
+        invisible: true
+
+    groups:
+        label: backend::lang.user.groups
+        relation: groups
+        select: name
+        sortable: true
+        invisible: true

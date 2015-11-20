@@ -1,0 +1,79 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+profile[gender]:
+    label: 'Gender'
+    tab: 'profile'
+    type: radio
+    options:
+        M: Male
+        F: Female
+
+profile[mobile]:
+    label: 'Mobile'
+    tab: 'profile'
+
+profile[birthDate]:
+    label: 'BirthDate'
+    tab: 'profile'
+
+profile[address]:
+    label: 'Address'
+    tab: 'profile'
+
+profile[promotion]:
+    label: 'Promotion'
+    tab: 'School'
+
+profile[speciality]:
+    label: 'speciality'
+    tab: 'School'
+    type: radio
+    options:
+        EMACS: EMACS
+        GC: GC
+        CIGMA: CIGMA
+        RISK: RISK
+        MIEE: MIEE
+
+profile[schoolEmail]:
+    label: 'schoolEmail'
+    tab: 'School'
+
+profile[membershipDoc]:
+    label: 'Membership Document'
+    tab: 'membership'
+    type: switch
+
+profile[studentCard]:
+    label: 'Student Card'
+    tab: 'membership'
+    type: switch
+
+profile[cqCard]:
+    label: 'CQ Card'
+    tab: 'membership'
+    type: switch
+
+profile[rib]:
+    label: 'RIB'
+    tab: 'membership'
+    type: switch
+
+profile[paycheck]:
+    label: 'Paycheck'
+    tab: 'membership'
+    type: switch
+
+profile[resume]:
+    label: 'Resume'
+    tab: 'membership'
+    type: switch
+
+profile[ri]:
+    label: 'Internal regulation'
+    tab: 'membership'
+    type: switch
+
+

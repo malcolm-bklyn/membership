@@ -26,7 +26,7 @@ class Profile extends Model
     /**
      * @var array Jsonable fields
      */
-    protected $jsonable = ['membership'];
+    protected $jsonable = [];
 
     /**
      * @var array Relations

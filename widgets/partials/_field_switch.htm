@@ -1,0 +1,32 @@
+<!-- Switch -->
+<div class="field-switch">
+</div>
+
+<input
+
+    type="hidden"
+    name="switch"
+
+    value="0"
+    <?= $this->previewMode ? 'disabled="disabled"' : '' ?>>
+
+<label class="custom-switch" <?= $this->previewMode ? 'onclick="return false"' : '' ?>>
+    <input
+        id="<?= $column->getName() ?>_<?= $record->id ?>"
+        name="<?= $column->getName() ?>"
+        data-request="onSwitch"
+        data-request-data="user_id: <?= $record->id ?>, col: '<?= $column->getName() ?>'"
+        data-request-success="$('#<?= $column->getName() ?>_<?= $record->id ?>').attr('value', data['value'] );"
+        
+
+        type="checkbox"
+        value="<?= $value ?>"
+        <?= $this->previewMode ? 'readonly="readonly"' : '' ?>
+        <?= $value == 1 ? 'checked="checked"' : '' ?>>
+    <span><span><?= e(trans('backend::lang.form.field_on')) ?></span><span><?= e(trans('backend::lang.form.field_off')) ?></span></span>
+    <a class="slide-button"></a>
+</label>
+
+<script type="text/javascript">
+    
+</script>

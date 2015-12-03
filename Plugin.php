@@ -39,7 +39,7 @@ class Plugin extends PluginBase
     public function registerNavigation()
     {
         return [
-            'member' => [
+            'membership' => [
                 'label'       => 'Member',
                 'url'         => Backend::url('xnok/membership/members'),
                 'icon'        => 'icon-user',
@@ -58,7 +58,19 @@ class Plugin extends PluginBase
                         'icon'  => 'icon-check-circle-o',
                         'url'   => Backend::url('xnok/membership/membershipChecker'),
                         'permissions' => ['xnok.membership.*'],
-                    ]
+                    ],
+                    'jobs' => [
+                        'label' => 'Jobs',
+                        'icon'  => 'icon-coffee',
+                        'url'   => Backend::url('xnok/membership/jobs'),
+                        'permissions' => ['xnok.membership.*'],
+                    ],
+                    'mandates' => [
+                        'label' => 'Mamdates',
+                        'icon'  => 'icon-users',
+                        'url'   => Backend::url('xnok/membership/mandates'),
+                        'permissions' => ['xnok.membership.*'],
+                    ],
                 ]
             ]
         ];
@@ -73,6 +85,7 @@ class Plugin extends PluginBase
     {
         UserModel::extend(function($model){
             $model->hasOne['profile'] = ['XNok\Membership\Models\Profile'];
+            //$model->belongsto['jobs'] = ['XNok\Membership\Models\Job', 'table' => 'xnok_membership_job_users'];
         });
 
         UsersController::extendFormFields(function($form, $model, $context){

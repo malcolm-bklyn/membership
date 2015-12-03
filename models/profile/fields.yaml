@@ -17,6 +17,10 @@ profile[mobile]:
 profile[birthDate]:
     label: 'BirthDate'
     tab: 'profile'
+    type: datepicker
+    mode: date
+    minDate: 1990-01-01
+    maxDate: 2020-12-31
 
 profile[address]:
     label: 'Address'

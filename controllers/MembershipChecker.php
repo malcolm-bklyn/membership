@@ -21,7 +21,7 @@ class MembershipChecker extends Controller
     {
         parent::__construct();
 
-        BackendMenu::setContext('XNok.Membership', 'member', 'membershipchecker');
+        BackendMenu::setContext('XNok.Membership', 'membership', 'membershipchecker');
     }
 
     public function update($id)

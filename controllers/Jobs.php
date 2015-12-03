@@ -4,22 +4,24 @@ use BackendMenu;
 use Backend\Classes\Controller;
 
 /**
- * Members Back-end Controller
+ * Jobs Back-end Controller
  */
-class Members extends Controller
+class Jobs extends Controller
 {
     public $implement = [
         'Backend.Behaviors.FormController',
-        'Backend.Behaviors.ListController'
+        'Backend.Behaviors.ListController',
+        'Backend.Behaviors.RelationController'
     ];
 
     public $formConfig = 'config_form.yaml';
     public $listConfig = 'config_list.yaml';
+    public $relationConfig = 'config_relation.yaml';
 
     public function __construct()
     {
         parent::__construct();
 
-        BackendMenu::setContext('XNok.Membership', 'membership', 'members');
+        BackendMenu::setContext('XNok.Membership', 'membership', 'jobs');
     }
 }

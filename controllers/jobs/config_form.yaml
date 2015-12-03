@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Job
+
+# Model Form Field configuration
+form: $/xnok/membership/models/job/fields.yaml
+
+# Model Class name
+modelClass: XNok\Membership\Models\Job
+
+# Default redirect location
+defaultRedirect: xnok/membership/jobs
+
+# Create page
+create:
+    title: Create Job
+    redirect: xnok/membership/jobs/update/:id
+    redirectClose: xnok/membership/jobs
+
+# Update page
+update:
+    title: Edit Job
+    redirect: xnok/membership/jobs
+    redirectClose: xnok/membership/jobs
+
+# Preview page
+preview:
+    title: Preview Job

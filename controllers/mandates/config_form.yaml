@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Mandate
+
+# Model Form Field configuration
+form: $/xnok/membership/models/mandate/fields.yaml
+
+# Model Class name
+modelClass: XNok\Membership\Models\Mandate
+
+# Default redirect location
+defaultRedirect: xnok/membership/mandates
+
+# Create page
+create:
+    title: Create Mandate
+    redirect: xnok/membership/mandates/update/:id
+    redirectClose: xnok/membership/mandates
+
+# Update page
+update:
+    title: Edit Mandate
+    redirect: xnok/membership/mandates
+    redirectClose: xnok/membership/mandates
+
+# Preview page
+preview:
+    title: Preview Mandate

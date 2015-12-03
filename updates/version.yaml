@@ -2,4 +2,12 @@
 1.0.2:
     - Created profiles table
     - create_profiles_table.php
-1.0.3: Created Members controller
+1.0.3:
+    - Created mandates table
+    - create_mandates_table.php
+1.0.4:
+    - Create jobs table
+    - create_jobs_table.php
+1.0.5:
+    - Create job_users table
+    - create_job_users_table.php

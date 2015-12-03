@@ -4,9 +4,9 @@ use BackendMenu;
 use Backend\Classes\Controller;
 
 /**
- * Members Back-end Controller
+ * Mandates Back-end Controller
  */
-class Members extends Controller
+class Mandates extends Controller
 {
     public $implement = [
         'Backend.Behaviors.FormController',
@@ -20,6 +20,6 @@ class Members extends Controller
     {
         parent::__construct();
 
-        BackendMenu::setContext('XNok.Membership', 'membership', 'members');
+        BackendMenu::setContext('XNok.Membership', 'membership', 'mandates');
     }
 }

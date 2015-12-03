@@ -24,13 +24,13 @@ class CreateProfilesTable extends Migration
             $table->enum('speciality', ['EMACS', 'GC', 'CIGMA', 'RISK', 'MIEE'])->nullable();
             $table->string('schoolEmail')->nullable();
             //JE
-            $table->boolean('membershipDoc')->nullable();
-            $table->boolean('studentCard')->nullable();
-            $table->boolean('cqCard')->nullable();
-            $table->boolean('rib')->nullable();
-            $table->boolean('paycheck')->nullable();
-            $table->boolean('resume')->nullable();
-            $table->boolean('ri')->nullable();         
+            $table->boolean('membershipDoc')->default(false);
+            $table->boolean('studentCard')->default(false);
+            $table->boolean('cqCard')->default(false);
+            $table->boolean('rib')->default(false);
+            $table->boolean('paycheck')->default(false);
+            $table->boolean('resume')->default(false);
+            $table->boolean('ri')->default(false);         
 
             $table->timestamps();
         });

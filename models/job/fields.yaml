@@ -1,0 +1,29 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+tabs:
+    fields:
+
+        name:
+            label: Name
+            tab: job
+
+        parent:
+            label: Parent
+            tab: job
+            type: relation
+            emptyOption: New root
+
+        description:
+            label: description
+            tab: job
+            type: markdown
+            size: huge
+            mode: split
+
+        users:
+            label: users
+            tab: users
+            type: partial
+            path: field_users

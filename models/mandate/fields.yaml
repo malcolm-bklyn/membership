@@ -1,0 +1,23 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label: ID
+        disabled: true
+
+    name:
+        label: name
+
+    start_date:
+        label: 'Start Date'
+        type: datepicker
+        mode: date
+        size: 50
+
+    end_date:
+        label: 'Start End'
+        type: datepicker
+        mode: date
+        size: 50

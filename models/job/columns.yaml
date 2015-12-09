@@ -9,3 +9,10 @@ columns:
 
     name:
         label: Name
+
+    mandate:
+        label: mandate
+        relation: mandate
+        select: name
+
+

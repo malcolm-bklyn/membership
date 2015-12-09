@@ -28,7 +28,7 @@ class Mandate extends Model
      */
     public $hasOne = [];
     public $hasMany = [
-        
+        'jobs' => ['XNok\Membership\Models\Job']
     ];
     public $belongsTo = [];
     public $belongsToMany = [];

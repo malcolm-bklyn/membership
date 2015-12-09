@@ -28,6 +28,7 @@ showSorting: true
 
 # displays a tree hierarchy for parent/child records. Default: false.
 showTree: true
+treeExpanded: true
 
 # Default sorting column
 # defaultSort:
@@ -36,6 +37,8 @@ showTree: true
 
 # Display checkboxes next to each record
 # showCheckboxes: true
+
+filter: config_filter.yaml
 
 # Toolbar widget configuration
 toolbar:

@@ -1,0 +1,11 @@
+# ===================================
+# Filter Scope Definitions
+# ===================================
+
+scopes:
+
+    mandate:
+        label: Mandate
+        modelClass: XNok\Membership\Models\Mandate
+        nameFrom: name
+        conditions: mandate_id in (:filtered)

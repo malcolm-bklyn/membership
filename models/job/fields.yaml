@@ -15,6 +15,11 @@ tabs:
             type: relation
             emptyOption: New root
 
+        mandate:
+            label: Mandate
+            tab: job
+            type: relation
+
         description:
             label: description
             tab: job

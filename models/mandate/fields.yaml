@@ -3,9 +3,6 @@
 # ===================================
 
 fields:
-    id:
-        label: ID
-        disabled: true
 
     name:
         label: name
@@ -14,10 +11,10 @@ fields:
         label: 'Start Date'
         type: datepicker
         mode: date
-        size: 50
+        span: left
 
     end_date:
         label: 'Start End'
         type: datepicker
         mode: date
-        size: 50
+        span: right

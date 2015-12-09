@@ -13,6 +13,7 @@ class CreateJobsTable extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->integer('parent_id')->nullable();
+            $table->integer('mandate_id')->unsigned();
             $table->string('name');
             $table->text('description')->nullable();
             $table->softDeletes();

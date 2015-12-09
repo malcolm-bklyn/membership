@@ -29,9 +29,11 @@ class Job extends Model
      */
     public $hasOne = [];
     public $hasMany = [];
-    public $belongsTo = [];
+    public $belongsTo = [
+        'mandate' => ['XNok\Membership\Models\Mandate'],
+    ];
     public $belongsToMany = [
-        'users' => ['Backend\Models\User', 'table' => 'xnok_membership_job_users']
+        'users' => ['Backend\Models\User', 'table' => 'xnok_membership_job_users'],
     ];
     public $morphTo = [];
     public $morphOne = [];

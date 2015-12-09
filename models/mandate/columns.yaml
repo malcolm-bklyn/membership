@@ -9,6 +9,7 @@ columns:
 
     name:
         label: Name
+        searchable: true
 
     start_date:
         label: 'Start Date'

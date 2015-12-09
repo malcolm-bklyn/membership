@@ -33,7 +33,7 @@ class MembershipChecker extends Controller
     {
         $id = post('user_id');
         $name = post('col');
-        $value = !post($name);
+        $value = (post($name) == 0 ? 1:0  );
 
         $profile = ProfileModel::where('user_id', $id)->get();
 

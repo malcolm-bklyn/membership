@@ -16,7 +16,7 @@
         name="<?= $column->getName() ?>"
         data-request="onSwitch"
         data-request-data="user_id: <?= $record->id ?>, col: '<?= $column->getName() ?>'"
-        data-request-success="$('#<?= $column->getName() ?>_<?= $record->id ?>').attr('value', data['value'] );"
+        data-request-success="$('#<?= $column->getName() ?>_<?= $record->id ?>').attr('value', data['value']);"
         
 
         type="checkbox"

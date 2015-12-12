@@ -1,0 +1,14 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+jobs:
+    label: Jobs
+    view:
+        showSearch: true
+        list:  ~/plugins/xnok/membership/models/job/columns.yaml
+        toolbarButtons: add|remove
+    manage:
+        schowSeach: true
+        form: ~/plugins/xnok/membership/models/profile/user_fields.yaml
+        recordsPerPage: 20

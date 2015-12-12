@@ -1,0 +1,133 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+
+
+tabs:
+    defaultTab: backend::lang.user.account
+    fields:
+        login:
+            span: left
+            label: backend::lang.user.login
+
+        email:
+            span: right
+            label: backend::lang.user.email
+
+        send_invite:
+            context: create
+            type: checkbox
+            label: backend::lang.user.send_invite
+            comment: backend::lang.user.send_invite_comment
+            default: true
+
+        first_name:
+            span: left
+            label: backend::lang.user.first_name
+
+        last_name:
+            span: right
+            label: backend::lang.user.last_name
+
+        password:
+            type: password
+            span: left
+            label: backend::lang.user.password
+
+        password_confirmation:
+            type: password
+            span: right
+            label: backend::lang.user.password_confirmation
+
+        groups:
+            context: [create, update]
+            label: backend::lang.user.groups
+            commentAbove: backend::lang.user.groups_comment
+            type: checkboxlist
+
+        profile[birthDate]:
+            label: 'BirthDate'
+            tab: 'profile'
+            span: left
+
+        profile[gender]:
+            label: 'Gender'
+            tab: 'profile'
+            type: radio
+            options:
+                M: Male
+                F: Female
+            span: right
+
+        profile[mobile]:
+            label: 'Mobile'
+            tab: 'profile'
+
+        profile[address]:
+            label: 'Address'
+            tab: 'profile'
+
+        profile[promotion]:
+            label: 'Promotion'
+            tab: 'School'
+            span: left
+
+        profile[schoolEmail]:
+            label: 'schoolEmail'
+            tab: 'School'
+            span: right
+
+        profile[speciality]:
+            label: 'speciality'
+            tab: 'School'
+            type: dropdown
+            options:
+                EMACS: EMACS
+                GC: GC
+                CIGMA: CIGMA
+                RISK: RISK
+                MIEE: MIEE
+
+        profile[membershipDoc]:
+            label: 'Membership Document'
+            tab: 'membership'
+            type: switch
+            span: left
+
+        profile[studentCard]:
+            label: 'Student Card'
+            tab: 'membership'
+            type: switch
+            span: right
+
+        profile[cqCard]:
+            label: 'CQ Card'
+            tab: 'membership'
+            type: switch
+            span: left
+
+        profile[rib]:
+            label: 'RIB'
+            tab: 'membership'
+            type: switch
+            span: right
+
+        profile[paycheck]:
+            label: 'Paycheck'
+            tab: 'membership'
+            type: switch
+            span: left
+
+        profile[resume]:
+            label: 'Resume'
+            tab: 'membership'
+            type: switch
+            span: right
+
+        profile[ri]:
+            label: 'Internal regulation'
+            tab: 'membership'
+            type: switch
+            span: left

@@ -5,7 +5,7 @@
 # List Title
 title: Manage Members
 # Model List Column configuration
-list: ~/modules/backend/models/user/columns.yaml
+list: $/xnok/membership/models/profile/users_columns.yaml
 # Model Class name
 modelClass: Backend\Models\User
 # Options

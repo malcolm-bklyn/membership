@@ -6,7 +6,7 @@
 name: Member
 
 # Model Form Field configuration
-form: ~/modules/backend/models/user/fields.yaml
+form: $/xnok/membership/models/profile/users_fields.yaml
 
 # Model Class name
 modelClass: Backend\Models\User

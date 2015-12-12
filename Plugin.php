@@ -85,15 +85,7 @@ class Plugin extends PluginBase
     {
         UserModel::extend(function($model){
             $model->hasOne['profile'] = ['XNok\Membership\Models\Profile'];
-            //$model->belongsto['jobs'] = ['XNok\Membership\Models\Job', 'table' => 'xnok_membership_job_users'];
-        });
-
-        UsersController::extendFormFields(function($form, $model, $context){
-            $this->extendUserFormFields($form, $model, $context);
-        });
-
-        MembersController::extendFormFields(function($form, $model, $context){
-            $this->extendUserFormFields($form, $model, $context);
+            $model->belongsToMany['jobs'] = ['XNok\Membership\Models\Job', 'table' => 'xnok_membership_job_users'];
         });
 
         MembersController::extendListColumns(function($list, $model){
@@ -108,20 +100,4 @@ class Plugin extends PluginBase
             ]);
         });
     }
-
-    private function extendUserFormFields($form, $model, $context){
-            if(!$model instanceof UserModel)
-                return;
-
-            if(!$model->exists)
-                return;
-
-            //ensure that user always has a profile
-            ProfileModel::getFromUser($model);
-
-            $configFile = __DIR__ . '/models/profile/fields.yaml';
-            $config = Yaml::parse(File::get($configFile));
-            $form->addTabFields($config);
-    }
-
 }
